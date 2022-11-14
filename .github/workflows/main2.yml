@@ -56,7 +56,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "${{ toJson(github.event.repository.url || env.BODY) }}"
+                  "text": "${{github.event.repository.url}}"
                 }
               }
             ]
