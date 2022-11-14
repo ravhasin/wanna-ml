@@ -49,7 +49,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "${{ toJSON(github.event.repository.body) }}"
+                  "text": "${{ github.event.repository }}"
                 }
               },
                {
