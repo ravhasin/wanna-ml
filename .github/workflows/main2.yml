@@ -1,8 +1,5 @@
 name: ReleaseNotice
 on:
-  push:
-    branches:
-      - 'master'
   release:
     types: [published]
   workflow_dispatch:
@@ -49,7 +46,7 @@ jobs:
                 "type": "section",
                 "text": {
                   "type": "mrkdwn",
-                  "text": "${{ github.event.release.body }}"
+                  "text": "${{ json(github.event.release.body) }}"
                 }
               },
                {
